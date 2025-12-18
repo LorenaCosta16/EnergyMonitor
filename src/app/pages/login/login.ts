@@ -5,19 +5,12 @@ import { LoginFormComponent } from './components/login-form/login-form';
 
 @Component({
   selector: 'app-login',
-<<<<<<< HEAD
   imports: [LoginHeader, LoginFormComponent],
   templateUrl: './login.html',
   styleUrls: ['./login.css'],
 })
-export class Login {
-  private auth = inject(AuthService);
-=======
-  templateUrl: './login.html',
-  styleUrls: ['./login.css'],
-})
 export class LoginComponent {
->>>>>>> 8fb45b3f9f0e51c568a51c7be989daf60f0323d0
+  private auth = inject(AuthService);
 
   login() {
     this.auth.login();
