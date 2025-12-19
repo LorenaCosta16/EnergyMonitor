@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { AuthService } from '../../services/auth-service';
 import { LoginHeader } from './components/login-header/login-header';
+import { AuthService } from '../../services/auth-service';
 import { LoginFormComponent } from './components/login-form/login-form';
 
 @Component({
@@ -9,10 +9,12 @@ import { LoginFormComponent } from './components/login-form/login-form';
   templateUrl: './login.html',
   styleUrls: ['./login.css'],
 })
-export class Login {
+export class LoginComponent {
   private auth = inject(AuthService);
+  email = '';
+  password = '';
 
   login() {
-    this.auth.login();
+    this.auth.login(this.email, this.password);
   }
 }

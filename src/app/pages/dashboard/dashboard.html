@@ -1,0 +1,17 @@
+<div class="min-h-screen bg-gray-900 p-8">
+  <h1 class="text-3xl font-bold text-white mb-6">Dashboard - Monitoramento de Energia</h1>
+
+  <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+    <h2 class="text-xl text-white mb-4">Consumo Mensal</h2>
+    <div style="height: 400px;">
+      <canvas baseChart
+        [data]="lineChartData"
+        [options]="lineChartOptions"
+        [legend]="lineChartLegend"
+        type="line">
+      </canvas>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,11 @@
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  flex: 1; /* Ocupa o restante do espaço */
+  margin-left: 260px; /* Margem igual à largura do sidebar */
+  padding: 20px;
+  background-color: #0b0e14; /* Fundo bem escuro para o resto do site */
+  min-height: 100vh;
+}
