@@ -5,7 +5,9 @@
       <input
         type="email"
         id="email"
+        name="email"
         placeholder="seu@email.com"
+        [(ngModel)]="email"
         class="w-full bg-gray-900 text-gray-200 border border-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition duration-200 placeholder-gray-600"
       />
     </div>
@@ -15,7 +17,9 @@
       <input
         type="password"
         id="password"
+        name="password"
         placeholder="••••••••"
+        [(ngModel)]="password"
         class="w-full bg-gray-900 text-gray-200 border border-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition duration-200 placeholder-gray-600"
       />
     </div>
