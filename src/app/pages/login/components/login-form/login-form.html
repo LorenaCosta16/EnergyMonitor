@@ -1,0 +1,35 @@
+<div class="mx-auto bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-md border border-gray-700">
+  <form>
+    <div class="mb-5">
+      <label for="email" class="block text-gray-300 text-sm font-medium mb-2"> E-mail </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="seu@email.com"
+        [(ngModel)]="email"
+        class="w-full bg-gray-900 text-gray-200 border border-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition duration-200 placeholder-gray-600"
+      />
+    </div>
+
+    <div class="mb-6">
+      <label for="password" class="block text-gray-300 text-sm font-medium mb-2"> Senha </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="••••••••"
+        [(ngModel)]="password"
+        class="w-full bg-gray-900 text-gray-200 border border-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition duration-200 placeholder-gray-600"
+      />
+    </div>
+
+    <button
+      type="button"
+      (click)="onLogin()"
+      class="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:-translate-y-1"
+    >
+      Entrar
+    </button>
+  </form>
+</div>

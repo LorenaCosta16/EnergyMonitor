@@ -3,7 +3,15 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
+<<<<<<< HEAD
+    "analytics": "4a6ef4e9-6d07-42b4-b56b-8128af792d07"
+=======
+<<<<<<< HEAD
+    "analytics": "97879c55-0661-4085-8d2c-ebbf298bd8d0"
+=======
     "analytics": false
+>>>>>>> 8fb45b3f9f0e51c568a51c7be989daf60f0323d0
+>>>>>>> recuperando-meu-stash
   },
   "newProjectRoot": "projects",
   "projects": {
